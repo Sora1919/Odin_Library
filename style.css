@@ -145,7 +145,7 @@ body{
     font-size: var(--font-md);
 }
 
-#library_container #dialog_box .dialog_container input[type = text]{
+#library_container #dialog_box .dialog_container input[type = text], #library_container #dialog_box .dialog_container input[type = number]{
     width: 250px;
     padding: 10px;
     font-size: var(--font-sm);
@@ -153,6 +153,10 @@ body{
     background-color: var(--white);
     border: none;
     border-radius: var(--border-radius);
+}
+
+#library_container #dialog_box .dialog_container input[type = checkbox]{
+    padding: 10px;
 }
 
 #library_container #dialog_box .dialog_container .btn_dialog{
