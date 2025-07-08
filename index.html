@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+    <div id="library_container">
+        <!-- header section -->
+        <div class="header">
+            <div class="header_container">
+                <h2 class="library_name">Odin Library</h2>
+                <button id="btn_add_book"><i class="fas fa-plus"></i>Add Book</button>
+            </div>   
+        </div>
+
+        <!-- books will be displayed here -->
+        <div id="book_container"></div>
+
+        <!-- add book dialog box -->
+         <div id="dialog_box" class="dialog">
+            <div class="dialog_container">
+                <h3 class="dialog_header">Add New Book</h3>
+                <label>Title</label><br>
+                <input type="text" id="dialog_book_title" required>
+                <label>Author</label><br>
+                <input type="text" id="dialog_book_author" required>
+                <label>Number of pages</label><br>
+                <input type="text" id="dialog_book_page" required>
+                <label>
+                    <input type="checkbox"  id="dialog_book_isread">Have you Read?
+                </label><br>
+                <button id="btn_dialog_add" class="btn_dialog">Add</button>
+                <button id="btn_dialog_close" class="btn_dialog">Close</button>
+            </div>
+         </div>
+
+        <!-- footer section -->
+        <footer id="footer">
+            <div class="footer_container">
+                <div class="footer_text">Copyright &copy; 2025 Sora1919 <a href="https://github.com/Sora1919" target="_blank"><i class="fa-brands fa-github"></i></a> </div>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="library.js"></script>
+</body>
+</html>
